@@ -1,0 +1,190 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled1.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyMC3k8kjgs5OFD1FoGu33HL",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Gnanasamyuktha/Project/blob/master/Project1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 23 + 25 + 26 + 30 + 35 + 23 + 46 + 55\n",
+        "print(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "N1Ph5x0lpeEM",
+        "outputId": "3656dd66-f484-43c4-abba-3d4cec6577af"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "263\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(a/8)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "r3IYDw8Vpq5z",
+        "outputId": "3d4e400a-f5c7-4f8b-a314-54f5cbebee20"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "32.875\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = 26 + 30\n",
+        "print(a/2)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "w9yBVREmp6g4",
+        "outputId": "5153fb7e-2cc7-4a3e-ca78-b18480ba084b"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "28.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import csv\n",
+        "with open(\"height.csv\", newline=\"\") as f:\n",
+        "  reader = csv.reader(f)\n",
+        "  file_data = list(reader)"
+      ],
+      "metadata": {
+        "id": "oJ2pOZ6LqQHb"
+      },
+      "execution_count": 1,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from collections import Counter\n",
+        "new_data = \"whitehatjr\"\n",
+        "data = Counter(new_data)\n",
+        "print(data)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Q4_JvS-3S_dz",
+        "outputId": "61d230a7-6dcf-43fd-b0cf-95757e6be421"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Counter({'h': 2, 't': 2, 'w': 1, 'i': 1, 'e': 1, 'a': 1, 'j': 1, 'r': 1})\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "new_list = data.items()\n",
+        "print(new_list)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "49FSJWJLTbjT",
+        "outputId": "d1992119-99d4-41c1-8de7-9543e476f258"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "dict_items([('w', 1), ('h', 2), ('i', 1), ('t', 2), ('e', 1), ('a', 1), ('j', 1), ('r', 1)])\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "value = data.values()\n",
+        "print(value)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "UK8_r4JRTudL",
+        "outputId": "c589a6b6-cb00-434a-c441-56edfa002a4e"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "dict_values([1, 2, 1, 2, 1, 1, 1, 1])\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
